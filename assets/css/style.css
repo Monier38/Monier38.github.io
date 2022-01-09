@@ -23,7 +23,7 @@ h6 {
 }
 
 a {
-  color: #1e1e1e;
+  /*color: #1e1e1e;*/
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -91,9 +91,6 @@ a:hover {
   }
 }
 
-.overlay-mf {
-  background-color: #0078ff;
-}
 
 .overlay-mf {
   position: absolute;
@@ -314,7 +311,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0078ff;
+  background: #000000;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -1043,58 +1040,6 @@ a:hover {
   }
 }
 /*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
-@media (min-width: 767px) {
-  .card-blog {
-    margin-bottom: 3rem;
-  }
-}
-.card-blog .card-body {
-  position: relative;
-}
-.card-blog .card-category-box {
-  position: absolute;
-  text-align: center;
-  top: -16px;
-  left: 15px;
-  right: 15px;
-  line-height: 25px;
-  overflow: hidden;
-}
-.card-blog .card-category {
-  display: inline-block;
-  color: #fff;
-  padding: 0 15px 5px;
-  overflow: hidden;
-  background-color: #0078ff;
-  border-radius: 4px;
-}
-.card-blog .card-category .category {
-  color: #fff;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 0.1px;
-  margin-bottom: 0;
-}
-.card-blog .card-title {
-  font-size: 1.3rem;
-  margin-top: 0.6rem;
-}
-.card-blog .card-description {
-  color: #4e4e4e;
-}
-.card-blog .post-author {
-  display: inline-block;
-}
-.card-blog .post-date {
-  color: #4e4e4e;
-  display: inline-block;
-  float: right;
-}
-
-/*--------------------------------------------------------------
 # Blog Single
 --------------------------------------------------------------*/
 .post-box,
@@ -1233,9 +1178,16 @@ a:hover {
 # Elixir Creation
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-elixir h1{
-  margin-bottom: 20px;
+  padding-bottom: 0.75em;
 }
 
+
+.portfolio-details .portfolio-elixir .desc-outils, .travaux-rea{
+  padding-top: 3em;
+}
+.portfolio-details .portfolio-elixir .travaux-rea{
+  padding-bottom: 2em;
+}
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1258,6 +1210,81 @@ a:hover {
 }
 .portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
+}
+.lien{
+  color: #8ab4f8;
+}
+
+/*
+# card Elixir
+*/
+.portfolio-details .portfolio-elixir .travaux-rea img{
+  height:150px;
+  width:100%;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card-block{
+  padding: 1rem;
+  width: 15em;
+}
+
+.portfolio-details .portfolio-elixir .travaux-rea .w-like-elixir{
+  font-size: 2.5rem;;
+  float: left;
+}
+.portfolio-details .portfolio-elixir .travaux-rea div [class^="col-"]{
+  padding-left:6em;
+  padding-right:10em;
+  padding-bottom: 1em;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card{
+  transition:0.5s;
+  cursor:pointer;
+  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card-text{
+  height:80px;  
+}
+
+.portfolio-details .portfolio-elixir .travaux-rea .card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card::before {
+  transform-origin: left top;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card::after {
+  transform-origin: right bottom;
+}
+.portfolio-details .portfolio-elixir .travaux-rea .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
 }
 /*--------------------------------------------------------------
 # Footer
