@@ -773,26 +773,28 @@ a:hover {
   margin-bottom: 3rem;
   text-align: center;
 }
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
+
 .service-box .service-ico {
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+
+.service-box .service-ico .veille{
+  height: 250px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
 }
-.service-box .ico-circle i {
-  line-height: 0;
-  font-size: 40px;
+
+.service-ico .imgProfil{
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
 }
+
 .service-box .s-title {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -881,7 +883,13 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.skill-icon{
+  width: 100px;
+}
 
+skil-img{
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
