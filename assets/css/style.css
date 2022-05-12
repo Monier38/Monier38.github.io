@@ -805,6 +805,14 @@ a:hover {
   color: #4e4e4e;
 }
 
+.imgWork{
+  height: 250px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
@@ -837,10 +845,11 @@ a:hover {
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
-  margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .work-box:hover img {
   transform: scale(1.3);
